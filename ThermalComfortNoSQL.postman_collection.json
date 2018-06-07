@@ -1,0 +1,1737 @@
+{
+	"info": {
+		"_postman_id": "f9d269d7-fefb-4779-9202-c562638f2012",
+		"name": "ThermalComfortNoSQL",
+		"description": "Postman collection for the thermal comfort no SQL implementation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/nosql/api/v1/floors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\": 1,\r\n\t\"name\": \"Piso1\",\r\n\t\"_v\": 1.0,\r\n\t\"rooms\": []\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/floors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\": 2,\r\n\t\"name\": \"Piso2\",\r\n\t\"_v\": 1.0,\r\n\t\"rooms\": []\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/floors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\": 3,\r\n\t\"name\": \"Piso3\",\r\n\t\"_v\": 1.0,\r\n\t\"rooms\": []\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/floors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\": 4,\r\n\t\"name\": \"Piso4\",\r\n\t\"_v\": 1.0,\r\n\t\"rooms\": []\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 1,\n\t\"name\": \"Room1A\",\n\t\"_v\": 1.0,\n\t\"floor\": 1,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 2,\n\t\"name\": \"Room1B\",\n\t\"_v\": 1.0,\n\t\"floor\": 1,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 3,\n\t\"name\": \"Room1C\",\n\t\"_v\": 1.0,\n\t\"floor\": 1,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 4,\n\t\"name\": \"Room2A\",\n\t\"_v\": 1.0,\n\t\"floor\": 2,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 5,\n\t\"name\": \"Room2B\",\n\t\"_v\": 1.0,\n\t\"floor\": 2,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 6,\n\t\"name\": \"Room2C\",\n\t\"_v\": 1.0,\n\t\"floor\": 2,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 7,\n\t\"name\": \"Room3A\",\n\t\"_v\": 1.0,\n\t\"floor\": 3,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 8,\n\t\"name\": \"Room3B\",\n\t\"_v\": 1.0,\n\t\"floor\": 3,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 9,\n\t\"name\": \"Room3C\",\n\t\"_v\": 1.0,\n\t\"floor\": 3,\n\t\"sensors\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 1,\n\t\"_v\": 1.0,\n\t\"room\": 1\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 2,\n\t\"_v\": 1.0,\n\t\"room\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 3,\n\t\"_v\": 1.0,\n\t\"room\": 3\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 4,\n\t\"_v\": 1.0,\n\t\"room\": 4\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 5,\n\t\"_v\": 1.0,\n\t\"room\": 5\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/sensors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": 6,\n\t\"_v\": 1.0,\n\t\"room\": 6\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 1,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 2,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 2,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 2,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 2,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 3,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 3,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 3,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 4,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 4,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 4,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/measurements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Temperatura\",\n\t\"_v\": 1.0,\n\t\"sensor\": 4,\n\t\"unit\": \"C\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/23/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 1\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/23/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 1\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/23/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 1\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/23/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 1\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/realtimedata/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"realtimedata",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/realtimedata/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/floors/1",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"floors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/2",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/rooms/2/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"rooms",
+						"2",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						"1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/sensors/1",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"sensors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/nosql/api/v1/rooms/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"12/25/2017\",\n\t\"_v\": 1.0,\n\t\"value\": 25,\n\t\"sensor\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/nosql/api/v1/measurements/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"nosql",
+						"api",
+						"v1",
+						"measurements",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d6a83af4-035a-4bfe-a7fb-33e8a891e1c8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e8fab09c-d9c7-4e2a-be9e-fd91f3e3a62c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "bc191be3-718b-480a-8f68-02206734f034",
+			"key": "domain",
+			"value": "localhost:8000",
+			"type": "string",
+			"description": ""
+		}
+	]
+}
