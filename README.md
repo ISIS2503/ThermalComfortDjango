@@ -1,5 +1,5 @@
 # ThermalComfortDjango
-Proyecto implementado en python utilizando el framework ágil **Django v1.11**. Incluye dos (2) aplicaciones que consisten en servicios REST de persistencia, el primero utilizando una base de datos relacional (PostgreSQL) y el segundo una base de datos no relacional (MongoDB).
+Proyecto implementado en python utilizando el framework ágil **Django v1.11**. Incluye dos (2) aplicaciones que consisten en servicios REST de persistencia (CRUD), la primera utilizando una base de datos relacional (PostgreSQL) y la segunda una base de datos no relacional (MongoDB).
 
 Todos los componentes están desplegados en contenedores **Docker**.
 
