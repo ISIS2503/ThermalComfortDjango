@@ -102,7 +102,7 @@ class FloorReview(GenericAPIView):
             client = MongoClient(settings.MONGODB_HOST, settings.MONGODB_PORT)
             db = client[settings.MONGODB_DB]
             floors = db["floors"]
-            result = floors.remove({"code": pk})
+            result = floors.remove({"code": int(pk)})
             respo = {
                 "MongoObjectID": str(result),
                 "Message": "Objeto eliminado"
@@ -147,7 +147,8 @@ class RoomSetViewer(GenericAPIView):
                     "floor": dto["floor"],
                     "_v": dto["_v"],
                     "_id": str(dto["_id"]),
-                    "sensors": dto["sensors"]
+                    "sensors": dto["sensors"],
+                    "queries": dto["queries"]
                 }
                 result.append(json_data)
             client.close()
@@ -159,6 +160,7 @@ class RoomSetViewer(GenericAPIView):
             rooms = db["rooms"]
             data = JSONParser().parse(request)
             code = data["code"]
+            data['queries'] = 0
             result = rooms.insert(data)
             respo = {
                 "MongoObjectID": str(result),
@@ -182,8 +184,37 @@ class RoomSetViewer(GenericAPIView):
                     "floor": dto["floor"],
                     "_v": dto["_v"],
                     "_id": str(dto["_id"]),
-                    "sensors": dto["sensors"]
+                    "sensors": dto["sensors"],
+                    "queries": dto["queries"]
                 }
+                json_data["queries"] = json_data["queries"] + 1
+                data = rooms.update({"code": int(json_data["code"])}, {"name": json_data["name"], "code": json_data["code"], "floor": json_data["floor"], "_v": json_data["_v"], "sensors":json_data["sensors"], "queries":json_data["queries"]})
+                floors = db["floors"]
+                floor_id = json_data["floor"]
+                floorResult = floors.find({"code":int(floor_id)})
+                for floor in floorResult:
+                    floor_data = {
+                        "code": floor["code"],
+                        "name": floor["name"],
+                        "_v": floor["_v"],
+                        "_id": str(floor["_id"]),
+                        "rooms": floor["rooms"]
+                    }
+                    result2 = []
+                    rooms = rooms.find({}).sort("queries", -1).limit(2)
+                    for room in rooms:
+                        json = {
+                            "code": room["code"],
+                            "name": room["name"],
+                            "floor": room["floor"],
+                            "_v": room["_v"],
+                            "_id": str(room["_id"]),
+                            "sensors": room["sensors"],
+                            "queries": room["queries"]
+                        }
+                        result2.append(json)
+                    floor_data["rooms"] = result2
+                    floors.update({"code": int(floor_data["code"])}, {"name": floor_data["name"], "code": floor_data["code"],  "_v":floor_data["_v"], "rooms":floor_data["rooms"]})
                 result.append(json_data)
             client.close()
             return JsonResponse(result, safe=False)
